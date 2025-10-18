@@ -19,9 +19,7 @@ CSG generate(){
 	def massKgValue = measurments.massKg
 	def priceValue = measurments.price
 	def sourceValue = measurments.source
-	for(String key:measurments.keySet().stream().sorted().collect(Collectors.toList())){
-		println "ElecFreakPin value "+key+" "+measurments.get(key);
-}
+
 	// Stub of a CAD object
 	CSG part = new Cube().toCSG()
 	return part
